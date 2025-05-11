@@ -1,13 +1,11 @@
 import React from "react";
-import Ques_5_List_Item from "./Module 3/React Hooks - useState & useEffect/Ques_5_List_Item";
-
- // Ensure correct file name
+import Fetch_Data from "./Module 3/React Hooks - useState & useEffect/Ques_6_Fetch_Data";  // Ensure correct file path
 
 function App() {
   return (
     <div>
-      <h1>React List Items Example</h1>
-      <Ques_5_List_Items />
+      <h1>React Fetch Data Example</h1>
+      <Fetch_Data />
     </div>
   );
 }
