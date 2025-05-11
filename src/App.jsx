@@ -1,9 +1,11 @@
-import Greeting from './Module 3/Introduction to ReactJS/Ques_3';
+import React from "react";
+import Profile from "./Ques5_jsc.jsx";  // Ensure correct file name
 
 function App() {
   return (
     <div>
-      <Greeting />
+      <h2>User Profile</h2>
+      <Profile name="Sahana Shivaram" age={25} />
     </div>
   );
 }
