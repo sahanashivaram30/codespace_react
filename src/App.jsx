@@ -1,11 +1,12 @@
 import React from "react";
-import Timeout_Counter from "./Module 3/React Hooks - useState & useEffect/Ques_8_Timeout_Counter";  // Ensure correct file path
+import Ques_9_Dependent_API_Call from "./Module 3/React Hooks - useState & useEffect/Ques_9_Dependent_API_Call";
+
 
 function App() {
   return (
     <div>
-      <h1>React Timeout Counter Example</h1>
-      <Timeout_Counter />
+      <h1>React Dependent API Call Example</h1>
+      <Ques_9_Dependent_API_Call />
     </div>
   );
 }

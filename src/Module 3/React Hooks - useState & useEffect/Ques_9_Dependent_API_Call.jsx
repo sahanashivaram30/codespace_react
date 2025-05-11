@@ -1,7 +1,28 @@
-// Dependent API Calls with useEffect
-// Description: Create a component that displays a list of users. When a user is clicked, fetch and display their posts.
+import React, { useState, useEffect } from "react";
 
-// Steps to needed:
-//     - First useEffect : Fetches the user list.
-//     - Second useEffect([selectedUserId]) : Fetches posts when a user is selected.
-//     - Write your code within the file, by the name of component as Dependent_API_Call
+const Ques_9_Dependent_API_Call = () => {
+  const [userId, setUserId] = useState(1);
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetch(`https://jsonplaceholder.typicode.com/posts/${userId}`)
+      .then((response) => response.json())
+      .then((json) => setData(json))
+      .catch((error) => console.error("Error fetching data:", error));
+  }, [userId]);
+
+  return (
+    <div>
+      <h2>Dependent API Call</h2>
+      <button onClick={() => setUserId(userId + 1)}>Fetch Next Post</button>
+      {data && (
+        <div>
+          <h3>{data.title}</h3>
+          <p>{data.body}</p>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Ques_9_Dependent_API_Call;
