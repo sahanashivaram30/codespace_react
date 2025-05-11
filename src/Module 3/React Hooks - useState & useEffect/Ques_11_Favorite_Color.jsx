@@ -6,3 +6,24 @@
 //     - Implement an input field to update favoriteColor using onChange .
 //     - Display the value of favoriteColor below the input field.
 //     - Write your code within the file, by the name of component as Timeout_Counter
+import React, { useState } from "react";
+
+const Timeout_Counter = () => {
+  // State to store the favorite color
+  const [favoriteColor, setFavoriteColor] = useState("");
+
+  return (
+    <div>
+      <h2>Favorite Color Picker</h2>
+      <input
+        type="text"
+        placeholder="Enter your favorite color"
+        value={favoriteColor}
+        onChange={(e) => setFavoriteColor(e.target.value)}
+      />
+      <p>Your favorite color is: <strong>{favoriteColor}</strong></p>
+    </div>
+  );
+};
+
+export default Timeout_Counter;

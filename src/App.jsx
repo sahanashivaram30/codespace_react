@@ -1,11 +1,11 @@
 import React from "react";
-import Local_Storage from "./Module 3/React Hooks - useState & useEffect/Ques_10_Local_Storage";  // Ensure correct file path
+import Timeout_Counter from "./Module 3/React Hooks - useState & useEffect/Ques_11_Favorite_Color";  // Ensure correct file path
 
 function App() {
   return (
     <div>
-      <h1>React Local Storage Example</h1>
-      <Local_Storage />
+      <h1>React Favorite Color Example</h1>
+      <Timeout_Counter />
     </div>
   );
 }
