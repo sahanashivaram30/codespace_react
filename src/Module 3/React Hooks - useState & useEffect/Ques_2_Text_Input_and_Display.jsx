@@ -1,20 +1,21 @@
-// Text Input and Display
-// Description: Create a React component that allows users to input text in a textbox and displays the input below the textbox.
-
-// Steps:
-//     - Write your code within the file, by the name of component as Text_Input
 import React, { useState } from "react";
 
-const Ques1_Counter = () => {
-  // Initialize state variable count with an initial value of 0
-  const [count, setCount] = useState(0);
+const Ques_2_Text_Input_and_Display = () => {
+  // State to store user input
+  const [text, setText] = useState("");
 
   return (
     <div>
-      <h2>Counter: {count}</h2>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <h2>Enter Text Below:</h2>
+      <input 
+        type="text" 
+        placeholder="Type something..." 
+        value={text} 
+        onChange={(e) => setText(e.target.value)} 
+      />
+      <p>You typed: {text}</p>
     </div>
   );
 };
 
-export default Ques1_Counter;
+export default Ques_2_Text_Input_and_Display;
