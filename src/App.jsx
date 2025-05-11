@@ -1,11 +1,11 @@
 import React from "react";
-import Ques_6 from "./Ques_6";  // Ensure correct file name
+import Ques1_Counter from "./ques1_counter";  // Ensure correct file name
 
 function App() {
   return (
     <div>
-      <h1>Conditional Rendering Example</h1>
-      <Ques_6 isLoggedIn={true} />  {/* Change to false to test */}
+      <h1>React Counter Example</h1>
+      <Ques1_Counter />
     </div>
   );
 }
