@@ -1,12 +1,16 @@
 import React from "react";
-import Title_Update from "./Module3/ReactHooks - useState and useEffect/Ques_13_Title_Update";  // Ensure correct file path
+import { Provider } from "react-redux";
+import store from "./store";
+import Counter from "./Module 4/Redux Toolkit - State Management in React/Counter_Redux/Counter";
 
 function App() {
   return (
-    <div>
-      <h1>React Document Title Updater</h1>
-      <Title_Update />
-    </div>
+    <Provider store={store}>
+      <div>
+        <h1>React Redux Counter App</h1>
+        <Counter />
+      </div>
+    </Provider>
   );
 }
 
